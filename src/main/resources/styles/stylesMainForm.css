@@ -1,0 +1,23 @@
+.addBtn {
+    -fx-background-color: #b6e4b6;
+    -fx-border-color: #74b074;
+    -fx-border-width: 1px;
+}
+.addBtn:hover {
+    -fx-background-color: #90d690;
+}
+.addBtn:pressed {
+    -fx-background-color: #76c576;
+}
+
+.learnBtn {
+    -fx-background-color: #95e5d2;
+    -fx-border-color: #74b074;
+    -fx-border-width: 1px;
+}
+.learnBtn:hover {
+    -fx-background-color: #74d9c0;
+}
+.learnBtn:pressed {
+    -fx-background-color: #63ccb2;
+}

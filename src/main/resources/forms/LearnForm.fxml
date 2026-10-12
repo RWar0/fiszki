@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="445.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forms.LearnFormController">
+   <children>
+      <AnchorPane prefHeight="445.0" prefWidth="790.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="501.0" text="- Nauka -" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="76.0" text="Pytanie:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="76.0">
+               <font>
+                  <Font name="Consolas Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="245.0" text="Odpowiedź:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="245.0">
+               <font>
+                  <Font name="Consolas Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="contentLabel" alignment="TOP_LEFT" layoutX="50.0" layoutY="113.0" prefHeight="135.0" prefWidth="720.0" style="-fx-wrap-text: true;" text="Czekam na rozpoczęcie" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userAnswerField" layoutX="50.0" layoutY="279.0" onKeyPressed="#handleEnterOnUserAnswerField" prefHeight="40.0" prefWidth="720.0" promptText="Miejsce na odpowiedź" styleClass="userAnswerField" stylesheets="@../styles/stylesLearnForm.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="279.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label fx:id="correctAnswerLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="332.0" prefHeight="75.0" prefWidth="770.0" style="-fx-wrap-text: true;" text="TUTAJ POPRAWNA ODPOWIEDŹ" textFill="#009703" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="332.0">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="categorySelection" layoutX="50.0" layoutY="31.0" prefHeight="30.0" prefWidth="200.0" promptText="Wybierz kategorię" styleClass="selectCategory" stylesheets="@../styles/stylesLearnForm.css" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="30.0" />
+            <Button fx:id="startWithCategoryBtn" layoutX="256.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleStartWithCategoryBtn" styleClass="startWithCategoryBtn" stylesheets="@../styles/stylesLearnForm.css" text="Rozpocznij" AnchorPane.leftAnchor="255.0" AnchorPane.topAnchor="32.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="405.0" prefHeight="39.0" prefWidth="779.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="405.0">
+               <children>
+                  <Button fx:id="nextQuestionBtn" mnemonicParsing="false" onAction="#handleNextQuestionBtn" prefHeight="39.0" prefWidth="140.0" styleClass="nextQuestionBtn" stylesheets="@../styles/stylesLearnForm.css" text="Dalej">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="errorLabel" alignment="TOP_CENTER" layoutX="340.0" layoutY="31.0" prefHeight="47.0" prefWidth="440.0" style="-fx-wrap-text: true;" text="ErrorLabel" textFill="#fc0000" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="questionNoLabel" alignment="CENTER_RIGHT" layoutX="168.0" layoutY="82.0" prefHeight="17.0" prefWidth="50.0" text="No" textFill="#545454" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="85.0">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalLabel" layoutX="238.0" layoutY="85.0" prefHeight="17.0" prefWidth="82.0" text="/ TOTAL" textFill="#545454" AnchorPane.leftAnchor="223.0" AnchorPane.topAnchor="85.0">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="doesCharactersCaseMatterCheckBox" layoutX="54.0" layoutY="7.0" mnemonicParsing="false" text="Rozróżniaj wielkość znaków przy sprawdzaniu" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="7.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

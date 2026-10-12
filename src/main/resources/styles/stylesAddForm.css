@@ -1,0 +1,77 @@
+.addQuestionBtn {
+    -fx-background-radius: 15px;
+    -fx-background-color: #94e09e;
+    -fx-border-width: 1px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #22b235;
+}
+.addQuestionBtn:hover {
+    -fx-background-color: #63ea75;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+.addQuestionBtn:pressed {
+    -fx-background-color: #2de846;
+}
+
+.addCategoryBtn {
+    -fx-background-color: #83ebf1;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #26c7cf;
+    -fx-border-radius: 10px;
+}
+.addCategoryBtn:hover {
+    -fx-background-color: #58e5ec;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+.addCategoryBtn:pressed {
+    -fx-background-color: #20ccd5;
+}
+
+.removeCategoryBtn {
+    -fx-background-color: #ef9292;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #e84b4b;
+    -fx-border-radius: 10px;
+}
+.removeCategoryBtn:hover {
+    -fx-background-color: #fc7272;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+.removeCategoryBtn:pressed {
+    -fx-background-color: #ff3b3b;
+}
+
+.addFields {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-border-color: #d1d1d1;
+    -fx-border-radius: 10px;
+}
+.addFields:hover {
+    -fx-background-color: #f9f9f7;
+}
+.addFields:focused {
+    -fx-background-color: #fffef1;
+}
+
+.selectCategoryBox {
+    -fx-background-color: #d1d1d1;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #acacac;
+    -fx-border-radius: 10px;
+}
+
+.selectCategoryBox:hover {
+    -fx-background-color: #dedede;
+}
+
+.selectCategoryBox:pressed {
+    -fx-background-color: #bdbdbd;
+}

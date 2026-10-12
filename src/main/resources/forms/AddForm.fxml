@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="790.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forms.AddFormController">
+    <stylesheets>
+        <URL value="@/styles/stylesAddForm.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="445.0" prefWidth="790.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="501.0" text="- Dodawanie -" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font name="Consolas Bold" size="25.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="categorySelectionBox" onAction="#checkIfSelectedCategory" prefHeight="30.0" prefWidth="200.0" promptText="Wybierz kategorię" styleClass="selectCategoryBox" stylesheets="@../styles/stylesAddForm.css" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="60.0" />
+            <Label text="Treść pytania:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="180.0">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Odpowiedź:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="245.0">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="contentsField" onKeyPressed="#handleEnterOnAddQuestionFields" prefHeight="34.0" promptText="Treść pytania" styleClass="addFields" stylesheets="@../styles/stylesAddForm.css" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="170.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="answerField" onKeyPressed="#handleEnterOnAddQuestionFields" prefHeight="34.0" promptText="Odpowiedź" styleClass="addFields" stylesheets="@../styles/stylesAddForm.css" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="235.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addCategoryField" onKeyPressed="#handleEnterOnAddCategoryField" prefHeight="28.0" prefWidth="220.0" promptText="Nazwa kategorii" styleClass="addFields" stylesheets="@../styles/stylesAddForm.css" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="58.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#handleAddCategoryBtn" prefHeight="30.0" prefWidth="70.0" styleClass="addCategoryBtn" stylesheets="@../styles/stylesAddForm.css" text="Dodaj" AnchorPane.rightAnchor="241.0" AnchorPane.topAnchor="60.0" />
+            <HBox alignment="CENTER" minWidth="300.0" prefHeight="46.0" prefWidth="294.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="360.0">
+               <children>
+                  <Button maxWidth="300.0" minWidth="150.0" mnemonicParsing="false" onAction="#handleAddQuestionyBtn" prefHeight="45.0" styleClass="addQuestionBtn" stylesheets="@../styles/stylesAddForm.css" text="Dodaj">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutY="312.0" prefHeight="30.0" prefWidth="790.0" text="ErrorLabel" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="305.0">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="removeCategoryBtn" layoutX="252.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleRemoveCategoryBtn" prefHeight="30.0" prefWidth="100.0" styleClass="removeCategoryBtn" stylesheets="@../styles/stylesAddForm.css" text="Usuń kategorię" AnchorPane.leftAnchor="252.0" AnchorPane.topAnchor="60.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

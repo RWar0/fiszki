@@ -1,0 +1,59 @@
+.startWithCategoryBtn {
+    -fx-background-color: #94e09e;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #22b235;
+    -fx-border-radius: 10px;
+}
+.startWithCategoryBtn:hover {
+    -fx-background-color: #63ea75;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+.startWithCategoryBtn:pressed {
+    -fx-background-color: #2de846;
+}
+
+.nextQuestionBtn {
+    -fx-background-color: #e3d64c;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #a39822;
+    -fx-border-radius: 10px;
+}
+.nextQuestionBtn:hover {
+    -fx-background-color: #eedd27;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+.nextQuestionBtn:pressed {
+    -fx-background-color: #ffe900;
+}
+
+.userAnswerField {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-border-color: #d1d1d1;
+    -fx-border-radius: 10px;
+}
+.userAnswerField:hover {
+    -fx-background-color: #f9f9f7;
+}
+.userAnswerField:focused {
+    -fx-background-color: #fffef1;
+}
+
+.selectCategory {
+    -fx-background-color: #d1d1d1;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #acacac;
+    -fx-border-radius: 10px;
+}
+.selectCategory:hover {
+    -fx-background-color: #dedede;
+}
+.selectCategory:pressed {
+    -fx-background-color: #bdbdbd;
+}
